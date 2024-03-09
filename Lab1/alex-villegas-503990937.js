@@ -137,14 +137,10 @@ function esPalindromo(phrase)
    phrase = phrase.toLowerCase().replace(/\s/g, '');
 
    // Revertir la cadena
-    let splittedPhrase = phrase.split('');
-    let revertedPhrase ='';
-    
-    // Recorrer el Array 'cadenaEnArray' desde el ultimo al primer elemento.
-    // Almacenar el strintg revertido en la variable revertedString.
- 
-   // Comparar la cadena original con la revertida      
-   return phrase === revertedPhrase;
+   let cadenaRevertida = cadena.split('').reverse().join('');
+
+   // Comparar la cadena original con la revertida
+   return cadena === cadenaRevertida;
 }
 
 console.log(esPalindromo("Anita lava la tina")); // true.
