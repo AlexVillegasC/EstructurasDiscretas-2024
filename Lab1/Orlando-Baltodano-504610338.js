@@ -16,10 +16,12 @@ function esPalindromo(cadena)
     }
     return phrase === revertedphrase;
 
+    // Comparar la cadena original con la revertida      
+   return phrase === revertedPhrase;
 
-    // Comparar la cadena original con la revertida
-    return cadena === cadenaRevertida;
 }
 
 console.log(esPalindromo("Anita lava la tina")); // true
 console.log(esPalindromo("Hola mundo")); // false
+console.log(esPalindromo("A man, a plan a canal, Panama!")) //true
+console.log(esPalindromo("aaaa")) //true
