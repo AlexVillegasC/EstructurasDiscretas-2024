@@ -13,6 +13,18 @@ function esPalindromo(cadena)
    return cadena === cadenaRevertida;
 }
 
+// function esPalindrome(cadena){
+//     cadena = cadena.toLowerCase();
+//      cadena = cadena.replace(/\s/g, '');
+//      cadena = cadena.replace(/[^a-zA-Z0-9 ]/g, '');
+//      cadena = cadena.split('');
+//      let newCadena = cadena.reverse();
+//      newCadena = newCadena.join('');
+//      cadena = cadena.join('');
+
+//      return cadena == newCadena;
+// }
+
 console.log(esPalindromo("Anita lava la tina")); // true
 console.log(esPalindromo("OSO")); // true
 //console.log(esPalindromo("Hola mundo")); // false
