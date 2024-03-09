@@ -6,12 +6,14 @@ function esPalindromo(cadena)
    cadena = cadena.toLowerCase().replace(/[^a-z0-9]/gi, '');
 
    // Revertir la cadena
-   let cadenaRevertida = cadena.split('');
+   let cadenaSplitted = cadena.split('');
+
+   let cadenaRevertida = "";
 
    //reverse usando for
-   for(let i = (cadenaRevertida.Length() - 1); i>= 0; i--)
+   for(let i = (cadenaSplitted.length - 1); i>= 0; i--)
     {
-        
+        cadenaRevertida += cadenaSplitted[i];
     }
 
    // Comparar la cadena original con la revertida
