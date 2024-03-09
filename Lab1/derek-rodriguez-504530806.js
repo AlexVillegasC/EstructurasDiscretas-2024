@@ -8,12 +8,12 @@ function esPalindromo2(phrase)
     let splittedPhrase = phrase.split('');
     let revertida = '';
 
-    for (let i = splittedPhrase.lenght-1; i >= 0; i--)
+    for (let i = splittedPhrase.length-1; i >= 0; i--)
     {
         revertida += splittedPhrase[i];
     }
 
-    if(revertida == cadena)
+    if(revertida == phrase)
     {
         return true ;
     }
@@ -21,4 +21,12 @@ function esPalindromo2(phrase)
     {
         return false;
     }
+
+   
+    
+
+
 }
+
+console.log(esPalindromo2("Anita lava la tina"));
+console.log(esPalindromo2("Hola mundo"));
