@@ -7,7 +7,7 @@ function esPalindromo (phrase){
     let reversePhrase = ' ';
 
     //Recorrer el Array 'cadenaEnArray' desde el ultimo al primer elemento 
-    //Almacenar el string revertido en la variable  revertedString 
+    //Almacenar el string revertido en la variable  revertedString, 
     for(let i=splittedPhrase-1; i>=0; i--){
 
         reversePhrase += splittedPhrase[i];
