@@ -147,5 +147,6 @@ function esPalindromo(phrase)
    return phrase === revertedPhrase;
 }
 
-console.log(esPalindromo("Anita lava la tina")); // true.
-console.log(esPalindromo("Hola mundo")); // false
+
+console.log(esPalindromo("Anita lava la tina")); // true
+console.log(esPalindromo("Hola mundo")); // falsee
