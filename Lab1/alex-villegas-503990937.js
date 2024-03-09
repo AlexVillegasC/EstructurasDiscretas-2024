@@ -129,16 +129,22 @@ arrayG.forEach(function(gato) {
 // "" => FALSE
 // "   " => FALSE
 
-function esPalindromo(cadena)
+let phrase;
+
+function esPalindromo(phrase)
 {
    // Convertir a minúsculas y remover caracteres no alfabéticos incluyendo espacios
-   cadena = cadena.toLowerCase().replace(/[^a-z0-9]/gi, '');
+   phrase = phrase.toLowerCase().replace(/\s/g, '');
 
    // Revertir la cadena
-   let cadenaRevertida = cadena.split('').reverse().join('');
-
+   let splittedphrase = phrase.split('');
+    let revertedPhrase = '';
    // Comparar la cadena original con la revertida
-   return cadena === cadenaRevertida;
+    for (let i= splittedphrase.lenght-1; i >= 0; i--) {
+        splittedphrase += revertedPhrase;
+        
+    }
+    return cadena === cadenaRevertida;
 }
 
 console.log(esPalindromo("Anita lava la tina")); // true
