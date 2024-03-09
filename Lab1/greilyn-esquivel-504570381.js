@@ -2,7 +2,7 @@ function esPalindromo (phrase){
     //convertir a minusculas y remover caracteres no alfabeticos incluyendo 
     phrase = phrase.toLowerCase().replace(/\s /g, '');
 
-    //Revierte la cadena
+    //Revierte la cadena..
     let splittedPhrase = phrase. split('');
     let reversePhrase = ' ';
 
