@@ -148,3 +148,6 @@ function esPalindromo(phrase)
    
 console.log(esPalindromo("Anita lava la tina")); //true
 console.log(esPalindromo("Hola mundo")); //false
+
+let hola;
+//Adios solo prue
