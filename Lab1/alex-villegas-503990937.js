@@ -143,7 +143,7 @@ function esPalindromo(phrase)
     // Recorrer el Array 'cadenaEnArray' desde el ultimo al primer elemento.
     // Almacenar el strintg revertido en la variable revertedString.
  
-   // Comparar la cadena original con la revertida
+   // Comparar la cadena original con la revertida      
    return phrase === revertedPhrase;
 }
 
