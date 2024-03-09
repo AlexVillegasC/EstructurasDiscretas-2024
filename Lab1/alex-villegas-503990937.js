@@ -136,6 +136,7 @@ function esPalindromo(cadena)
 
    // Revertir la cadena
    let cadenaRevertida = cadena.split('').reverse().join('');
+   
 
    // Comparar la cadena original con la revertida
    return cadena === cadenaRevertida;
