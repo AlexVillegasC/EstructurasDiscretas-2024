@@ -88,18 +88,24 @@ function esPalindromo(phrase)
    let splittedphrase = phrase.split('');
     let revertedPhrase = '';
    // Comparar la cadena original con la revertida
-    for (let i= splittedphrase.lenght-1; i >= 0; i--) {
-        splittedphrase += revertedPhrase;
+    for (let i= splittedphrase.length-1; i >= 0; i--) {
+        revertedPhrase += splittedphrase[i];
         
     }
-    return cadena === cadenaRevertida;
+    if (revertedPhrase == phrase)
+    {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 console.log(esPalindromo("Anita lava la tina")); // true
 console.log(esPalindromo("Hola mundo")); // false
 
-console.log(esPalindromo("Anita lava la tina")); // true
-console.log(esPalindromo("Hola mundo")); // false
+// console.log(esPalindromo("Anita lava la tina")); // true
+// console.log(esPalindromo("Hola mundo")); // false
 
 /*function esPalindromo(cadena1) {
     const cadenaLimpia = cadena1.toLowerCase().replace(/[^a-z]/g, '');// remueve cosas en blanco
@@ -110,4 +116,6 @@ console.log(esPalindromo("Hola mundo")); // false
 }
 
 console.log(esPalindromo("Anita lava la tina")); // true
-console.log(esPalindromo("Hola mundo")); // false*/ 
+console.log(esPalindromo("Hola mundo")); // false*/
+//ldjfngkjeng
+    
