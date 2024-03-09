@@ -100,3 +100,14 @@ function esPalindromo(texto) {
 
 console.log(esPalindromo("hola mundo")); // false
 console.log(esPalindromo("oso")); // true
+
+
+////
+
+
+
+
+
+
+
+
