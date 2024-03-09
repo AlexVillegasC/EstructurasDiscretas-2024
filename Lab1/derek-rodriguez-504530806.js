@@ -30,3 +30,5 @@ function esPalindromo2(phrase)
 
 console.log(esPalindromo2("Anita lava la tina"));
 console.log(esPalindromo2("Hola mundo"));
+
+console.log("hola");
