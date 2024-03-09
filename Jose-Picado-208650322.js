@@ -110,17 +110,27 @@ class Gato {
  });
 
 
-function esPalindromo(cadena) //Hacer todo minuscula
+function esPalindromo(phrase) //Hacer todo minuscula
 {
     // Hacer todo minuscula
     //remover characters en blanco
-    phrase = phrase.toLowerCase.replace(/\s/g, '');
+    phrase = phrase.toLowerCase();
+    phrase = phrase.replace(/\s/g, '');
     // revertir la cadena 
     let splittedPhrase = phrase.split('');
-    let reverted
+    let revertedPhrase = '';
     // comparar la cadena original con la revertida
+    for (let i = splittedPhrase.length-1; i >= 0; i--) {
+        revertedPhrase += splittedPhrase[i];
+    }
 
-    return revertedString === cadenaOriginal;
+    if(revertedPhrase == phrase){
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 console.log(esPalindromo("Anita lava la tina"));//true
