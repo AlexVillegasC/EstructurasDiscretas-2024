@@ -15,3 +15,4 @@ console.log(hola) // hola is not defined
  var name = "juan";
 
 // Const
+ const name2 = "pedro";
