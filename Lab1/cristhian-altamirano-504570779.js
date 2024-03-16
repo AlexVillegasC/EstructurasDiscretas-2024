@@ -120,7 +120,7 @@ function esPalindromo(cadena){
     return revertirCadena == cadena;
 }
 
-console.log("\nPalindromo. " )
+console.log("\nFuncion Palindromo. " )
 console.log(esPalindromo("oso")); // Devuelve true
 console.log(esPalindromo("aleta")); // Devuelve false
 console.log(esPalindromo("ana")); // Devuelve true
