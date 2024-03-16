@@ -127,4 +127,4 @@ console.log(esPalindromo("ana")); // Devuelve true
 console.log(esPalindromo("Anita lava la tina")); // Devuelve true
 console.log(esPalindromo("No es un palindromo")); // Devuelve false
 console.log(esPalindromo("A man, a plan, a canal, Panama!")); // Devuelve true
-console.log(esPalindromo("aaaa")); // Devuelve true
+console.log(esPalindromo("aa a a")); // Devuelve true
