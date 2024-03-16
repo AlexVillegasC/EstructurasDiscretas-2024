@@ -137,14 +137,11 @@ function esPalindromo(phrase)
    phrase = phrase.toLowerCase().replace(/\s/g, '');
 
    // Revertir la cadena
-    let splittedPhrase = phrase.split('');
-    let revertedPhrase ='';
-    
-    // Recorrer el Array 'cadenaEnArray' desde el ultimo al primer elemento.
-    // Almacenar el strintg revertido en la variable revertedString.
- 
+   let cadenaRevertida = cadena.split('').reverse().join('');
+   
+
    // Comparar la cadena original con la revertida
-   return phrase === revertedPhrase;
+   return cadena === cadenaRevertida;
 }
 
 
