@@ -10,6 +10,7 @@ function esPalindromo (phrase){
 
     //Almacenar el string revertido en la variable  revertedString,    
 
+
     for(let i=splittedPhrase-1; i>=0; i--){
 
         reversePhrase += splittedPhrase[i];
