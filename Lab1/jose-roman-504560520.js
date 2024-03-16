@@ -13,6 +13,7 @@ function esPalindromo(cadena)
    return cadena === cadenaRevertida;
 }
 
+
 // function esPalindrome(cadena){
 //     cadena = cadena.toLowerCase();
 //      cadena = cadena.replace(/\s/g, '');
