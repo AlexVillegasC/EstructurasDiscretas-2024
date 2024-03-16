@@ -120,11 +120,11 @@ function esPalindromo(cadena){
     return revertirCadena == cadena;
 }
 
-console.log("\nFuncion Palindromo. " )
+console.log("\nPalindromo. " )
 console.log(esPalindromo("oso")); // Devuelve true
 console.log(esPalindromo("aleta")); // Devuelve false
 console.log(esPalindromo("ana")); // Devuelve true
 console.log(esPalindromo("Anita lava la tina")); // Devuelve true
 console.log(esPalindromo("No es un palindromo")); // Devuelve false
 console.log(esPalindromo("A man, a plan, a canal, Panama!")); // Devuelve true
-console.log(esPalindromo("aa aa")); // Devuelve true
+console.log(esPalindromo("aaaa")); // Devuelve true
