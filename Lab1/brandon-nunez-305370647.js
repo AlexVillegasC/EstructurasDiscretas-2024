@@ -1,8 +1,5 @@
 
-
-
-
-
+//Prueba
 function esPalindromo(cadena)
 {
    // Convertir a minúsculas y remover caracteres no alfabéticos incluyendo espacios
@@ -14,7 +11,7 @@ function esPalindromo(cadena)
 // reverse usando For
 
    // Comparar la cadena original con la revertida
-   
+
    return cadena === cadenaRevertida;
 }
 
