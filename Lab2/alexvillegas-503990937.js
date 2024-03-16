@@ -12,6 +12,6 @@ if (tiempos > 3) {
 console.log(hola) // hola is not defined
 
 // Var
-
+ var name = "juan";
 
 // Const
