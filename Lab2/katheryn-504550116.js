@@ -1,4 +1,4 @@
-//La variable let es usada en los programas de forma que se debe de asignar un valor, antes de empezar a
+//La variable let es usada en los programas de forma que se debe de asignar un valor, antes de empezar a programar.
 console.log("Practica de let");
 
 let num=5;
