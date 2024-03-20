@@ -18,22 +18,30 @@ for(let i = 0; i < 10; i++) //como definimos i como variable let
 
 //Ejemplo de var
 //var se puede definir como una variable global osea que una vez definida se puede utilizr en cualquier parte del codigo
-//Ademas que se puede volver a definir
+//Ademas que se puede volver a reescribir la variable
 
 
-    var nota = "Hola" ; //se define la varaible nota como una cadena de caracteres
+    
+var nota = 0 ;  
+
+for (let i = 0; i <= 5;i++) 
+    {
         
+        nota = Math.floor(Math.random() * 100) + 1; //accedemos a nota aun cuando fue declarada a fuera del ciclo for y ademas de eso le podemos reescribir 
+
+    }
 function Promedio()
 {
+    
+    
 
-    nota = Math.floor(Math.random() * 100) + 1;  //aqui se reescribe como un numero random de 1-100
     if(nota >= 70)
     {
-        return console.log("Usted ha aprobado "+ "su nota es: " + nota);
+        return console.log("Usted ha aprobado "+ "su nota es: " + nota); //y tambien aunque fue declarada a fuera de la funcions se sigue pudiendo acceder a nota
     }       
     else if (nota < 70) 
     {
-    return console.log("Usted ha reprobado "+ "su nota es: " + nota);
+    return console.log("Usted ha reprobado "+ "su nota es: " + nota); //igual aqui 
     }
 
 }
@@ -45,5 +53,5 @@ Promedio()
 
 const account = "Una cuenta";
 
-account = "Nueva cuenta"; //Como se puede observar al intentar darle un nuevo valor a la variable tira error 
+// account = "Nueva cuenta"; //Como se puede observar al intentar darle un nuevo valor a la variable tira error 
 
