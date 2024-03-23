@@ -24,4 +24,3 @@ function searchLibro(searchCriteria)
 
    return "No se encuentra";
 }
-
