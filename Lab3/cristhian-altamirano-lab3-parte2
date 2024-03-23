@@ -25,6 +25,6 @@ function bubbleSort(arr) {
   
   // Ejemplo de uso del algoritmo Bubble Sort
   const arrayToSort = [64, 34, 25, 12, 22, 11, 90];
-  console.log("Arreglo desordenado:", arrayToSort);
+  console.log("Arreglo desordenado de mayor a menor:", arrayToSort);
   const sortedArray = bubbleSort(arrayToSort);
   console.log("Arreglo ordenado:", sortedArray);
