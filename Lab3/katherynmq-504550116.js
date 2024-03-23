@@ -17,12 +17,11 @@ function SearchName(searchCriteria){
 
 //Lab 3, parte I
 const libros = [
-    `{id: 105, titulo: "El principito"},
+    {id: 105, titulo: "El principito"},
     {id: 210, titulo: "Cien años de soledad"},
     {id: 304, titulo: "Don Quijote de la Mancha"},
     {id: 457, titulo: "1984"},
-    {id: 501, titulo: "Un mundo feliz"},`
-    // ...
+    {id: 501, titulo: "Un mundo feliz"},
 ]
 
 console.log(SearchBook(105));
@@ -30,10 +29,14 @@ console.log(SearchBook(105));
 function SearchBook(searchbook){
 
     for(let i=0; i<libros.length; i++){
-        if(libros[i].includes(searchbook)){
-            return "Book founded";
+        if(libros[i].id==searchbook){
+            return "Book found " + libros[i].titulo;
         }
     }
 
     return "Book not found";
 }
+
+
+//Segunda parte
+
