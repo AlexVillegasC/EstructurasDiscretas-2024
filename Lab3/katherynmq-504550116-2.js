@@ -1,6 +1,6 @@
-const calificaciones = [7, 8, 5, 9, 10, 8, 6, 7, 9];
+const calificaciones = [75, 82, 51, 93, 100, 89, 65, 77, 95];
 sortGrades(calificaciones);
-console.log(calificaciones); // Output: [10, 9, 9, 8, 8, 7, 7, 6, 5]
+console.log(calificaciones); 
 
 
 function sortGrades(calificaciones) {
