@@ -6,7 +6,7 @@ function esPalindromo(cadena)
    // Revertir la cadena
    let cadenaRevertida = cadena.split('').reverse().join('');
 
-   //Ahora revertir con un for
+   //Ahora revertir con un ciclo for
    let Splittedphrase = phrase.split("");
     let revertedphrase = "";
 
@@ -14,7 +14,7 @@ function esPalindromo(cadena)
     {    
         revertedphrase += Splittedphrase[i];
     }
-    return phrase === revertedphrase;
+    return cadena === revertedphrase;
 
    
 
