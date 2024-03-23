@@ -96,3 +96,4 @@ const celular = { // Un objeto declarado con const si se puede modificar
 console.log("El delular es: " + celular.modelo);
 celular.modelo = "S24 Ultra"; // Se puede modificar de esta manera
 console.log("El delular es: " + celular.modelo);
+
