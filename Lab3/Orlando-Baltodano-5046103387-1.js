@@ -1,4 +1,4 @@
-///lineal search
+///lineal search function
 
 
 
@@ -15,6 +15,7 @@ const nombre = ["Jose","Pedro","daliel",];
         }
         return "No se encuentra";
     }
+
 
 
 
