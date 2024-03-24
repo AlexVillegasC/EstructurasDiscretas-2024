@@ -24,7 +24,7 @@ function abecedario()
     var consonantes = " B, C, D, F, G, H, J, K, L, M, N, Ñ, P, Q, R, S, T, V, W, X, Y, Z ";
 }
 
-console.log(consonantes);
+console.log(vocales);
 
 //Las variables var se pueden redeclarar y modificar. Ej:
 var nombre = "Angélica";
@@ -38,14 +38,23 @@ nombre = "María";
 //      En JavaScript al declarar e inicializar una variable var, la declaración se eleva
 //      a la parte superior del ámbito y se inicializan con undefined.
 
-//Por ejemplo:
-
+//Por ejemplo,
 console.log(saludar);
 var saludar = "Hola, qué tal?";
 
 //se interpreta como:
-
 var saludar;
 console.log(saludar);
 saludar = "Hola, que tal?";
+
+//Debilidad de la variable var:
+
+
+
+
+
+
+
+
+
 
