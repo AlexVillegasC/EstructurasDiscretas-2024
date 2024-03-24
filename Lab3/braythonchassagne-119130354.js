@@ -1,6 +1,37 @@
+// lineal search
+
+var nombres =["pedro", "juan","daniel"]
+
+console.log(serchName)("daniel")
+
+
+function serchName(searchCriteria)
+{
+    for(let i = 0; i < nombres.length; i++)
+    {
+        if(nombres[i] == searchCriteria)
+        {
+            return "si se encuentra";
+        }
+        return "no se encuentra"
+    }
+}
+
+var Titulo =["El principito","cien años de soledad","don quijote de la mancha","1984","un mundo feliz"]
+
+const libros = [
+    {id: 105, titulo: "El principito"},
+    {id: 210, titulo: "Cien años de soledad"},
+    {id: 304, titulo: "Don Quijote de la Mancha"},
+    {id: 457, titulo: "1984"},
+    {id: 501, titulo: "Un mundo feliz"},
+    // ...
+]
+console.log(libros[0].titulo);
+
 // Bubble Sort
 
-// Función para implementar el algoritmo Bubble Sort
+// Función para implementar el algoritmo Bubble Sort  
 function bubbleSort(arr) {
     // Variable para determinar si se realizó un intercambio durante una iteración
     let swapped;
