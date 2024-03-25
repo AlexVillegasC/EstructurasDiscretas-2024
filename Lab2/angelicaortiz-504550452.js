@@ -142,7 +142,35 @@ const apellido = "Ortiz";
 const apellido = "Barrantes";
 */
 
+//      const funciona diferente en un objeto, ya que sí permite modificar una propiedad
+//      más no el objeto en sí.
 
+const datos_personales = 
+{
+    name_: "Angélica",
+    last_name: "Ortiz",
+    Id_: "504550452"
+};
+console.log(datos_personales); 
 
+//  Mientras SÍ es posible hacer esto:
+datos_personales.Id_ = "107770777"; 
+console.log(datos_personales); 
 
+/* NO se puede hacer esto:
+ datos_personales = 
+{
+    name_: "María",
+    last_name: "Barrantes",
+    phone_number: "8393-8279"
+};
+*/
 
+//      El hosting de const funciona de la misma manera que el de la variable let.
+//      Se elevan al inicio del ámbito pero NO se inicializan en undefined.
+
+//Ejemplo de error: 
+/*
+console.log(telefono);
+const telefono = "8393-8274";
+*/
