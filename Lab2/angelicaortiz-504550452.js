@@ -1,6 +1,7 @@
 //Investigación Lab2
 
 //***********************Variables var:
+console.log("*****Variable var*****");
 //      Tienen un ámbito global o local, es decir que al ser declaradas fuera de 
 //      una función puede ser utilizada en todo el porgrama. Por otro lado, si se
 //      declara dentro de la función solo podrá ser utilizada en la función. 
@@ -24,15 +25,17 @@ function abecedario()
     var consonantes = " B, C, D, F, G, H, J, K, L, M, N, Ñ, P, Q, R, S, T, V, W, X, Y, Z ";
 }
 
-console.log(vocales);
+//console.log(consonantes);
 
 //Las variables var se pueden redeclarar y modificar. Ej:
 var nombre = "Angélica";
 var nombre = "María";
+console.log(nombre);
 
 //o
-var nombre = "Angélica";
-nombre = "María";
+var nombre = "María";
+nombre = "Angélica";
+console.log(nombre);
 
 //Hosting de var:
 //      En JavaScript al declarar e inicializar una variable var, la declaración se eleva
@@ -63,8 +66,28 @@ if(numeros)
 console.log(numeros);
 
 //***********************Variables let:
-//      
+console.log("*****Variable let*****");
+//      La variable let tiene un ámbito de bloque, es decir, entre {}. Esto significa 
+//      que cualquier variable let declarada solo está disponible dentro de su bloque ({}).
 
+let calif_apro = "Aprobado";
+let nota = 9;
+
+if(nota < 7)
+{
+let calif_necesaria = 7;
+let calif_desa = "Desaprobado \n";
+console.log(calif_desa + "Calificación necesaria: " + calif_necesaria); 
+}
+else
+{
+    console.log(calif_apro);
+    //console.log(calif_apro + "Calificación necesaria: " + calif_necesaria); 
+}
+//  -->Cuando se llama a la variable calif_necesaria dentro del bloque else se genera un error 
+//      ya que la variable fue declarada en el bloque if.
+//   -->Por otro lado, podemos ver que calif_apro sí se puede usar en el bloque else ya 
+//      fue declara fuera de if y else.
 
 
 
