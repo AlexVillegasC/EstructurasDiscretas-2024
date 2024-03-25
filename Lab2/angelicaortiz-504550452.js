@@ -66,7 +66,7 @@ if(numeros)
 console.log(numeros);
 
 //***********************Variables let:
-console.log("*****Variable let*****");
+console.log("\n*****Variable let*****");
 //      La variable let tiene un ámbito de bloque, es decir, entre {}. Esto significa 
 //      que cualquier variable let declarada solo está disponible dentro de su bloque ({}).
 
@@ -84,10 +84,64 @@ else
     console.log(calif_apro);
     //console.log(calif_apro + "Calificación necesaria: " + calif_necesaria); 
 }
-//  -->Cuando se llama a la variable calif_necesaria dentro del bloque else se genera un error 
+//   -->Cuando se llama a la variable calif_necesaria dentro del bloque else se genera un error 
 //      ya que la variable fue declarada en el bloque if.
 //   -->Por otro lado, podemos ver que calif_apro sí se puede usar en el bloque else ya 
 //      fue declara fuera de if y else.
+
+
+//      A diferencia de las variables var, las variables let NO se pueden redeclarar pero SÍ 
+//      se pueden modificar.
+
+//  Esto funciona:
+let hola = "Hola!";
+hola = " HolaaA ";
+console.log(hola);
+
+//  esto no:
+let chao = "Chao";
+//let chao = " ChaooO";
+
+//      Pero si se define en diferentes ámbitos, sí funciona porque se toma como si fuesen dos 
+//      variables diferentes.
+
+let ID = 504550452;
+
+if(ID)
+{
+    let ID = 102220463;
+    console.log(ID);
+}
+console.log(ID);
+
+//      Al igual que en var el hosting let eleva las declaraciones al inicio del ámbito, pero
+//      no se inicializan como undefined. Entonces cuando se usan antes de ser declaradas,
+//      en lugar del undefined se devuelve un error.
+
+//Ejemplo: 
+/*
+console.log(telefono);
+let telefono = "8393-8274";
+*/
+
+//***********************Variables const:
+console.log("\n*****Variable const*****");
+//      Solo se puede acceder a ellas en el bloque donde fueron declaradas (Si fueron
+//      declaradas en uno), igual que las variables let.
+
+//      Las variables const NO pueden modificarse ni redeclararse.
+
+//NO se puede hacer esto:
+/*
+const apellido = "Ortiz";
+apellido = "Barrantes";
+
+Esto tampoco:
+
+const apellido = "Ortiz";
+const apellido = "Barrantes";
+*/
+
 
 
 
