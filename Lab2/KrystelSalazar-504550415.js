@@ -25,11 +25,11 @@ if (repeticiones > 3) {
 }// Al intentar acceder a ladridoFuerte fuera del bloque if, se obtendrá error
 
 //Let puede modificarse, pero no volver a declararse
-let ladrido = "guau";//Funciona
-ladrido= "guau, guau";
+let ladrido2 = "guau";//Funciona
+ladrido2= "guau, guau";
 
-let ladrido = "guau";//Error
-let ladrido = "guau, guau"; //Nota: Si la misma variable se define en diferentes ámbitos, no habrá error
+let ladrido3 = "guau";//Error
+let ladrido3 = "guau, guau"; //Nota: Si la misma variable se define en diferentes ámbitos, no habrá error
 
 //EJEMPLO CONST (ambito bloque{})
 
@@ -37,7 +37,7 @@ let ladrido = "guau, guau"; //Nota: Si la misma variable se define en diferentes
  const cacareo = "quiquiriqui";//Error
  cacareo = "quiquiriqui, quiquiriqui";
 
-const cacareo= "quiquiriqui";//Error
-const cacareo = "quiquiriqui, quiquiriqui";
+const cacareo2= "quiquiriqui";//Error
+const cacareo2 = "quiquiriqui, quiquiriqui";
 
 //Var y let pueden ser declaradas sin ser inicializadas, const debe ser inicializada durante la declaración.
