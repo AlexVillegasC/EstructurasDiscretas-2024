@@ -31,6 +31,7 @@ ladrido2= "guau, guau";
 let ladrido3 = "guau";//Error
 let ladrido3 = "guau, guau"; //Nota: Si la misma variable se define en diferentes ámbitos, no habrá error
 
+
 //EJEMPLO CONST (ambito bloque{})
 
 //No puede modificarse ni volver a declararse:
@@ -40,4 +41,7 @@ let ladrido3 = "guau, guau"; //Nota: Si la misma variable se define en diferente
 const cacareo2= "quiquiriqui";//Error
 const cacareo2 = "quiquiriqui, quiquiriqui";
 
+
+
 //Var y let pueden ser declaradas sin ser inicializadas, const debe ser inicializada durante la declaración.
+
