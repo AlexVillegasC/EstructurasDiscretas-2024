@@ -13,7 +13,6 @@ console.log(maullido); // Muestra en pantalla: ¡Miau!
 maullido = "¡Miau, miau!";
 console.log(maullido); // Se modifica y muestra en pantalla: ¡Miau, miau!
 
-
 //EJEMPLO LET (ambito bloque{})
 
 //Solo está disponible para su uso dentro de ese bloque
@@ -43,4 +42,6 @@ const cacareo2= "quiquiriqui";//Error
 const cacareo2 = "quiquiriqui, quiquiriqui";
 
 
+
 //Var y let pueden ser declaradas sin ser inicializadas, const debe ser inicializada durante la declaración.
+
