@@ -1,4 +1,4 @@
-var id;
+/*var id;
 var titulo;
 
 const libros = [
@@ -8,11 +8,11 @@ const libros = [
     {id: 457, titulo: "1984"},
     {id: 501, titulo: "Un mundo feliz"}
 ]
-/////
+
 console.log(searchID(105))
 
 function searchID(terminoBusqueda){
-   //// 
+  //  
     
 for (let i = 0; i < libros.length; i++) {
 
@@ -21,7 +21,7 @@ for (let i = 0; i < libros.length; i++) {
     } 
 }
     return "NO SE ENCUENTRA";
-}
+}*/
 
 /// debajo de esto esta el codigo de ordenamiento de vectores.
 
