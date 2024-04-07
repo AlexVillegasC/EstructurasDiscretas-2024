@@ -1,6 +1,5 @@
 // ejercicio de libros
 let SearchCriteria;
-//
 const libros = 
 [
     {id: 105, titulo: "El principito"},
@@ -26,9 +25,6 @@ function Search(SearchCriteria)
     return "No se encontro ningun libro con ese id";
 }
 
-
-
-
 //Lab 3
 
 function sortGrades(calificaciones) {
@@ -43,12 +39,7 @@ function sortGrades(calificaciones) {
     }
   }
 }
-
-
 const calificaciones = [1, 20, 4, 100, 10, 7, 9, 3, 2];
 sortGrades(calificaciones);
 console.log('El vector ordenado: '+ '['+ calificaciones + ']'); 
-
-
-
 console.log(`Las cinco calificaciones más altas son: ${calificaciones.slice(0,5)}`);
