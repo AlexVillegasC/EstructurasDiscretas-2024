@@ -1,5 +1,6 @@
 // ejercicio de libros
 let SearchCriteria;
+//
 const libros = 
 [
     {id: 105, titulo: "El principito"},
