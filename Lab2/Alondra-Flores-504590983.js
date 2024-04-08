@@ -1,6 +1,6 @@
 // ------------------Tipos de Variables de Java Scrip---------
 
-Existen 3 tipos de variables en JavaScript: var,const,lent.
+Existen 3 tipos de variables en JavaScript: var,const,let.
 
 
 VARIABLE VAR: 
@@ -22,7 +22,7 @@ console.log("Edad: " + edad+ " " + typeof edad);
 
 ------------------------------------------------------------
 
-VARIABLE LENT:
+VARIABLE LET:
 
 Este tipo de Variables se utilizan dentro de un bloque de codigo limitado por llaves, se utiliza
 para poder declarar una variable en la que solo se utilizara en estos bloques especificos.
