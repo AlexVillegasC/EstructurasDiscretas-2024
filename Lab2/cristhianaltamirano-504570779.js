@@ -32,3 +32,4 @@ saludo = "Hola";
 
 const carro = "Audi"; //Las variables const no tienen la capacidad de poder refinirse, por lo tanto esvto nos daria error 
 const carro = "BMW";
+
