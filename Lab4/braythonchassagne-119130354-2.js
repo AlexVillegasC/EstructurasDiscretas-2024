@@ -1,13 +1,13 @@
-class queue
+class Stack
 {
  numeros = [];
  
- Enqueue()
+ stack()
  {
     this.numeros.push('1', '2', '3', '4');
  }
 
- Dequeue()
+ stack()
  {
     console.log("El ultimo numero en entrar es el numero 4");
     console.log(numeros);
@@ -21,9 +21,9 @@ class queue
 
 }
 
-const queue = new queue();
+const stack = new stack();
 
-queue.Enqueue();
+stack.Enqueue();
 console.log("n\n");
 
 queue.Dequeue();
