@@ -61,7 +61,3 @@ email = holaa;
 console.log(email); //En este caso, el programa tiraría error ya que ya se ha declarado que email 
 es de tipo const, por lo tanto su contenido será siempre constante y solo de lectura.
 
-
-
-
-//
