@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Investigación Lab2
 
 //***********************Variables var:
@@ -174,3 +175,5 @@ console.log(datos_personales);
 console.log(telefono);
 const telefono = "8393-8274";
 */
+=======
+>>>>>>> 7760038 (lab 3 solucionado)
