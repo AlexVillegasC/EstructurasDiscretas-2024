@@ -135,9 +135,7 @@ console.log("\n*****Variable const*****");
 /*
 const apellido = "Ortiz";
 apellido = "Barrantes";
-
 Esto tampoco:
-
 const apellido = "Ortiz";
 const apellido = "Barrantes";
 */

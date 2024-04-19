@@ -11,6 +11,7 @@ function searchName(searchCriteira)
             return "Si se encuentra. ";
         }
     }
+    
 
     return "No se encuentra. ";
 }

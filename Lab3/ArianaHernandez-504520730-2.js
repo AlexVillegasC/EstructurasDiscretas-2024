@@ -1,3 +1,6 @@
+// Bubble Sort
+
+// Función para implementar el algoritmo Bubble Sort
 function bubbleSort(arr) {
     // Variable para determinar si se realizó un intercambio durante una iteración
     let swapped;
@@ -23,9 +26,8 @@ function bubbleSort(arr) {
     return arr;
   }
   
-  
   // Ejemplo de uso del algoritmo Bubble Sort
   const arrayToSort = [64, 34, 25, 12, 22, 11, 90];
-  console.log("Arreglo desordenado de mayor a menor:", arrayToSort);
+  console.log("Arreglo desordenado:", arrayToSort);
   const sortedArray = bubbleSort(arrayToSort);
   console.log("Arreglo ordenado:", sortedArray);
