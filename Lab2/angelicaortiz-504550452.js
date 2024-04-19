@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //Investigación Lab2
 
 //***********************Variables var:
@@ -136,9 +135,7 @@ console.log("\n*****Variable const*****");
 /*
 const apellido = "Ortiz";
 apellido = "Barrantes";
-
 Esto tampoco:
-
 const apellido = "Ortiz";
 const apellido = "Barrantes";
 */
@@ -175,5 +172,3 @@ console.log(datos_personales);
 console.log(telefono);
 const telefono = "8393-8274";
 */
-=======
->>>>>>> 7760038 (lab 3 solucionado)
