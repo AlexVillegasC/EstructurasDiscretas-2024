@@ -1,4 +1,4 @@
-// Bubble Sort
+//Buble Scort
 
 // Función para implementar el algoritmo Bubble Sort
 function bubbleSort(arr) {
@@ -13,7 +13,7 @@ function bubbleSort(arr) {
       // Bucle interno para recorrer el arreglo desde el principio hasta el penúltimo elemento
       for (let i = 0; i < arr.length - 1; i++) {
         // Comparamos el elemento actual con el siguiente
-        if (arr[i] > arr[i + 1]) {
+        if (arr[i] < arr[i + 1]) {
           // Si están en el orden incorrecto, los intercambiamos y marcamos 'swapped' como verdadero
           [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
           swapped = true;
@@ -30,4 +30,4 @@ function bubbleSort(arr) {
   const arrayToSort = [64, 34, 25, 12, 22, 11, 90];
   console.log("Arreglo desordenado:", arrayToSort);
   const sortedArray = bubbleSort(arrayToSort);
-  console.log("Arreglo ordenado:", sortedArray);
+  console.log("Arreglo ordenado:", sortedArray);
