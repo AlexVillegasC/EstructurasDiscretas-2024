@@ -16,6 +16,8 @@
 //Buble sort en el peor de los casos
 //Cocktail sort en el peor de los casos
 //Gnome Sort, en el peor de los casos
+//Selection sort, en el peor de los casos
+//Insertions sort, en el peor de los casos
 
 
 // 6. **O(2^N) - Complejidad Exponencial:**
