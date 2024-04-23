@@ -42,7 +42,7 @@ function heapSort(arr) {
     return arr;
 }
 
-// Ejemplo de uso
+// Ejemplo 
 const array = [43, 2, 13, 56];
 console.log("Arreglo original: ", array);
 console.log("Arreglo ordenado con Heap Sort: ", heapSort(array));
