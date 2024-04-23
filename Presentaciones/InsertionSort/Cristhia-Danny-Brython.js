@@ -1,3 +1,8 @@
+//Integrantes:
+//Cristhian Altamirano.
+//Danny Abarca.
+//Brython Chassagne.
+
 class Carta {
     constructor(palo, valor) {
       this.palo = palo;
