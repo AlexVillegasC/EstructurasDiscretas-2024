@@ -1,5 +1,6 @@
 // 1. **O(1) - Complejidad Constante:** = Suma de Gauss
 //    - Implementa un algoritmo que siempre ejecute una cantidad fija de pasos, sin importar el tamaño de la entrada.   
+
 console.log("\n======== Complejidad Constante O(1) ========");
 console.log("Suma de Gauss: ");
 
@@ -9,8 +10,10 @@ number = (n * (n+1)) / 2;
 console.log(number);
 
 
+// ***************************************************************************************
 // 2. **O(Log N) - Complejidad Logarítmica:** = 
 //    - Implementa un algoritmo que divide repetidamente la cantidad de datos en cada paso.   
+
 console.log("\n======== Complejidad Logarítmica O(Log N) ========");
 function binarySearch(arr, target) {
     let start = 0; // Establece el índice de inicio del rango de búsqueda
@@ -48,8 +51,10 @@ function binarySearch(arr, target) {
   console.log(`El elemento ${target} se encuentra en el índice ${index}`);
   
 
+// ***************************************************************************************
 // 3. **O(N) - Complejidad Lineal:** =
 //    - Implementa un algoritmo que recorra cada elemento de la entrada una sola vez.   
+
 console.log("\n======== Complejidad Lineal O(N) ========");
 function calcularFactorial(n) {
     let factorial = 1; // Inicializar el factorial en 1
@@ -65,8 +70,10 @@ function calcularFactorial(n) {
   console.log(calcularFactorial(5)); // Debería imprimir 120
   
 
+// ***************************************************************************************
 // 4. **O(N Log N) - Complejidad Log-Lineal:** = Heap Sort
 //    - Implementa un algoritmo que combine un proceso lineal con uno logarítmico.   
+
 console.log("\n======== Complejidad Log-Lineal O(N Log N) ========");
 function swap(arr, i, j) {
     const c = arr[i];
@@ -123,8 +130,10 @@ heapSort(arr);
 console.log("Arreglo ordenado:", arr);
 
 
+// ***************************************************************************************
 // 5. **O(N^2) - Complejidad Cuadrática:** = (Gnome Sort en el peor/normal de los casos) (Bubble Sort)(Coktail Sort)(Selection Sort)
 //    - Implementa un algoritmo donde el tiempo de ejecución es proporcional al cuadrado del tamaño de la entrada.
+
 console.log("\n======== Complejidad Cuadrática O(N^2) ========");
 function selectionSort(arr) {
     // Bucle exterior: recorre el arreglo desde el principio hasta el penúltimo elemento
@@ -153,8 +162,10 @@ function selectionSort(arr) {
   console.log(sortedArray); // Salida esperada: [1, 2, 4, 5, 8]
   
 
+// ***************************************************************************************
 // 6. **O(2^N) - Complejidad Exponencial:** = 
 //    - Implementa un algoritmo que crezca exponencialmente con el tamaño de la entrada.   
+
 console.log("\n======== Complejidad Exponencial O(2^N) ========");
 function Fibonaccirecursivo(n) {
     // Condición base: si n es menor que 2, devuelve n
@@ -168,7 +179,73 @@ function Fibonaccirecursivo(n) {
   console.log(Fibonaccirecursivo(6)); //8
 
 
+// ***************************************************************************************
 // 7. **O(N!) - Complejidad Factorial:** = 
 //    - Implementa un algoritmo cuyo número de pasos crece factorialmente con el tamaño de la entrada.
 
+console.log("\n======== Complejidad Factorial O(N!) ========");
+// Esta función calcula el costo total de una asignación específica basada en la matriz de costos.
+function calcularCosto(asignacion, costos) {
+    let costoTotal = 0;
+    // Itera sobre cada elemento de la asignación para sumar los costos.
+    for (let i = 0; i < asignacion.length; i++) {
+      costoTotal += costos[i][asignacion[i]];
+    }
+    return costoTotal; // Retorna el costo total calculado.
+  }
+  
+  // Esta función encuentra la asignación con el costo mínimo entre todas las permutaciones posibles.
+  function encontrarMejorAsignacion(permutaciones, costos) {
+    let costoMinimo = Infinity; // Inicializa el costo mínimo con un valor infinito.
+    let mejorAsignacion = []; // Inicializa la mejor asignación como un arreglo vacío.
+  
+    // Itera sobre cada permutación para encontrar la de costo mínimo.
+    permutaciones.forEach(asignacion => {
+      let costoActual = calcularCosto(asignacion, costos); // Calcula el costo de la asignación actual.
+      if (costoActual < costoMinimo) { // Si el costo actual es menor que el costo mínimo encontrado hasta ahora...
+        costoMinimo = costoActual; // ...actualiza el costo mínimo...
+        mejorAsignacion = asignacion; // ...y actualiza la mejor asignación.
+      }
+    });
+  
+    return { mejorAsignacion, costoMinimo }; // Retorna la mejor asignación y el costo mínimo.
+  }
+  
+  // Esta función genera todas las permutaciones posibles de un arreglo.
+  function generarPermutaciones(array) {
+    // Función interna recursiva para generar permutaciones.
+    function permute(arr, m = []) {
+      if (arr.length === 0) { // Si el arreglo está vacío, agrega la permutación al resultado.
+        permutaciones.push(m);
+      } else {
+        // De lo contrario, para cada elemento del arreglo...
+        for (let i = 0; i < arr.length; i++) {
+          let curr = arr.slice(); // ...hace una copia del arreglo...
+          let next = curr.splice(i, 1); // ...extrae el elemento en la posición i...
+          permute(curr.slice(), m.concat(next)); // ...y llama a la función permute con el resto del arreglo y la permutación actual.
+       }
+     }
+   }
+  
+   let permutaciones = []; // Inicializa el arreglo de permutaciones.
+   permute(array); // Llama a la función permute con el arreglo original.
+   return permutaciones; // Retorna todas las permutaciones generadas.
+  }
+  
+  // Supongamos que tenemos 3 trabajadores y una matriz de costos para cada tarea.
+  let trabajadores = [0, 1, 2];
+  let costos = [
+    [9, 2, 7],
+    [6, 4, 3],
+    [5, 8, 1]
+  ];
+  
+  // Genera todas las permutaciones posibles de los trabajadores.
+  let todasLasAsignaciones = generarPermutaciones(trabajadores);
+  // Encuentra la mejor asignación con el costo mínimo.
+  let resultado = encontrarMejorAsignacion(todasLasAsignaciones, costos);
+  // Imprime la mejor asignación y el costo mínimo en la consola.
+  console.log('La mejor asignación es:', resultado.mejorAsignacion);
+  console.log('Con un costo mínimo de:', resultado.costoMinimo);
+  
 
