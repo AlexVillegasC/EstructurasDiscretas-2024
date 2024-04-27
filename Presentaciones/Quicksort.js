@@ -1,5 +1,5 @@
 /*INTEGRANTES:
-Billy Fabian Ugalde Villagra 504570551
+Billy Fabián Ugalde Villagra 504570551
 Brandon Vega Ocampo 504520264
 
 
