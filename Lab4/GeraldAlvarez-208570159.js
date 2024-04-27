@@ -27,4 +27,4 @@ newQueue.push(1);
 newQueue.push(2);
 newQueue.push(3);
 newQueue.shift();
-newQueue.queue();
+newQueue.queue();  
