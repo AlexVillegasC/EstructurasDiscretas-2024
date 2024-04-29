@@ -18,3 +18,5 @@
 
 // 7. **O(N!) - Complejidad Factorial:**
 //    - Implementa un algoritmo cuyo número de pasos crece factorialmente con el tamaño de la entrada.
+//Todos en el peor de los casos: 0(n^2)
+//Todos en el mejor de los casos: 0nlogn
