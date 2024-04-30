@@ -1,7 +1,9 @@
-// Bubble Sort
+// bubble sort de mayor a menor
+
+const calificaciones = [33,62,29,10,76,100,23,96,42,7,7,18,49,99];
 
 // Función para implementar el algoritmo Bubble Sort
-function bubbleSort(arr) {
+function bubbleSort(calificaciones) {
     // Variable para determinar si se realizó un intercambio durante una iteración
     let swapped;
   
@@ -10,12 +12,12 @@ function bubbleSort(arr) {
       // Inicializamos 'swapped' en falso al comienzo de cada iteración
       swapped = false;
   
-      // Bucle interno para recorrer el arreglo desde el principio hasta el penúltimo elemento
-      for (let i = 0; i < arr.length - 1; i++) {
+      // Bucle interno para recorrer el calificaioneseglo desde el principio hasta el penúltimo elemento
+      for (let i = 0; i < calificaciones.length ; i++) {
         // Comparamos el elemento actual con el siguiente
-        if (arr[i] > arr[i + 1]) {
+        if (calificaciones[i] < calificaciones[i + 1]) {
           // Si están en el orden incorrecto, los intercambiamos y marcamos 'swapped' como verdadero
-          [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+          [calificaciones[i], calificaciones[i + 1]] = [calificaciones[i + 1], calificaciones[i]];
           swapped = true;
         }
       }
@@ -23,11 +25,12 @@ function bubbleSort(arr) {
     } while (swapped);
   
     // Devolvemos el arreglo ordenado
-    return arr;
+    return calificaciones;
   }
   
   // Ejemplo de uso del algoritmo Bubble Sort
-  const arrayToSort = [64, 34, 25, 12, 22, 11, 90];
-  console.log("Arreglo desordenado:", arrayToSort);
-  const sortedArray = bubbleSort(arrayToSort);
-  console.log("Arreglo ordenado:", sortedArray);
+
+  console.log("calificaiones desordenado:", calificaciones);
+  const sortedcalificaiones = bubbleSort(calificaciones);
+  console.log("calificaiones ordenado:", sortedcalificaiones);
+
