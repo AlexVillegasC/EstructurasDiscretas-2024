@@ -36,9 +36,8 @@ function countSort(arr) {
     return output;  //Devuelve arreglo ordenado
 }
 
-//let array = [1, 1, 1, 1, 1, 1];   //Mejor de los casos
-//let array = [4, 2, 2, 3, 100, 1, 1];   //Peor de los casos
-let array = [4, 2, 2, 3, 4, 1, 1];    //Promedio
+
+let array = [4, 2, 2, 3, 4, 1, 1];    
 
 console.log("Array antes de ordenar:", array);
 console.log("Array después de ordenar:", countSort(array));
