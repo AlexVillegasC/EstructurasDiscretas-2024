@@ -23,5 +23,3 @@ function gnomeSort(arr) //se crea la funcion y recibe los parametros en arr
 console.log(gnomeSort([34, 2, 10, -9,1,100,23,45,5,-2,3,0]));
 
 //console.log(gnomeSort([1,2,3,4,5,7,6,8,9,10,11,12]));
-
-//
