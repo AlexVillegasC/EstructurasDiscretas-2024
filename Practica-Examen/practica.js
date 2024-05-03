@@ -43,7 +43,7 @@
 //         arrayRevertido.push(array[i]);
 //     }
 //     return arrayRevertido;
-// }
+// } 
 
 // function nombre() {
 //     for (var i = 1; i <= 100; i++) {
