@@ -1,3 +1,4 @@
+//Lab3 primera parte...
 var id;
 var titulo; 
 
@@ -23,3 +24,5 @@ function searchId(searchID)
     }
     return "Nose encuentra";
 } 
+
+
