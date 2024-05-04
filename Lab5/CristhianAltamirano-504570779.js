@@ -208,3 +208,5 @@ function permutaciones(cadena) {
     let resultadoPermutaciones = permutaciones(cadena);
     
     console.log(`Permutaciones de ${cadena}:  ${resultadoPermutaciones}`);
+
+    // Prueba
