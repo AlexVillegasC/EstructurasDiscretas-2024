@@ -1,4 +1,4 @@
-//Lab3 primera parte...
+//Lab3 primera parte...g.b.h.bhy
 var id;
 var titulo; 
 
