@@ -3,13 +3,15 @@
 // for(i = 1; i < N; i++)
 // {
 //     console.log("Hello world");
-// }
+// } //Imprime en pantalla: 9 
+//--------------------------------------------------------------------------
 
 // let N = 20;
 // for(i = 1; i < N; i = i * 2)
 // {
 //     console.log("Hello world");
-// }
+// }//Imprime en pantalla: 
+//--------------------------------------------------------------------------
 
 // function logFunction(n, count = 0) {    
 //     if (n === 1) {
@@ -19,6 +21,7 @@
 //     return logFunction(n, count + 1);
 // }
 // console.log(logFunction(8));
+//--------------------------------------------------------------------------
 
 // function determinarSaludo(hora) {
 
@@ -36,6 +39,7 @@
 // }
 
 // determinarSaludo(9);
+//--------------------------------------------------------------------------
 
 // function haceAlgo(array) {
 //     let arrayRevertido = [];
@@ -44,6 +48,7 @@
 //     }
 //     return arrayRevertido;
 // } 
+//--------------------------------------------------------------------------
 
 // function nombre() {
 //     for (var i = 1; i <= 100; i++) {
@@ -54,6 +59,7 @@
 // }
 
 // nombre();
+//--------------------------------------------------------------------------
 
 // function desconocido(array) {
 //     const length = array.length;
