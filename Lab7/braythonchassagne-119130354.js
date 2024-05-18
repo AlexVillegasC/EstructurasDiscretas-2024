@@ -1,20 +1,28 @@
-function containsDuplicates(nums) {
-    // Crear un nuevo Map para almacenar los números vistos
-    const numMap = new Map();
+// Definimos la lista de compras con los elementos y la cantidad inicial de cada uno
+let listaDeCompras = new Map();
+listaDeCompras.set('manzanas', 0);
+listaDeCompras.set('plátanos', 0);
+listaDeCompras.set('leche', 0);
+// Añadir más elementos según sea necesario
 
-    // Iterar sobre cada número en el array
-    for (let num of nums) {
-        // Verificar si el número ya está en el Map
-        if (numMap.has(num)) {
-            // Si el número ya está en el Map, significa que es un duplicado
-            return true;
-        }
-        // Si el número no está en el Map, agregarlo
-        numMap.set(num, true);
+// Función para añadir elementos a la lista de compras
+function agregarElemento(elemento, cantidad) {
+    if (listaDeCompras.has(elemento)) {
+        let cantidadActual = listaDeCompras.get(elemento);
+        listaDeCompras.set(elemento, cantidadActual + cantidad);
+    } else {
+        listaDeCompras.set(elemento, cantidad);
     }
-
-    // Si no se encuentran duplicados después de recorrer todo el array
-    return false;
 }
 
+// Simulamos comprar algunos elementos
+agregarElemento('manzanas', 5);
+agregarElemento('plátanos', 3);
+agregarElemento('leche', 1);
+// Puedes agregar más elementos según sea necesario
 
+// Mostrar la lista de compras
+console.log("Lista de compras actual:");
+listaDeCompras.forEach((cantidad, elemento) => {
+    console.log(`${elemento}: ${cantidad}`);
+});
