@@ -3,7 +3,10 @@
 // Explicar cual es esta estructura de datos y como se comporta.
 let mapa = new Map();
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e90a2d9 (Lab 6,7,8)
 mapa.set("clave", "valor");
 
 console.log(mapa.get("clave")); // imprime: "valor"
