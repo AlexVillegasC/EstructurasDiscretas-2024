@@ -1,37 +1,42 @@
-//encontrar un ejemplo que sea hash tables en js, que sea más útil con hasmap
-
-// Se crea una función para registrar el último mensaje de un usuario
-function registrarMensaje(usuarios, nombre, mensaje) {
-    // Si el usuario no existe en la tabla hash, agregarlo con un objeto vacío
-    if (!usuarios[nombre]) {
-        usuarios[nombre] = {};
+// Función para encontrar la palabra más larga que se pueda formar concatenando otras palabras
+function encontrarPalabraMasLarga(palabras) {
+    // Crear una tabla hash para almacenar las palabras
+    let tabla = {};
+    
+    // Agregar cada palabra a la tabla hash
+    for (let palabra of palabras) {
+        tabla[palabra] = true;
     }
     
-    // Agregar el mensaje al objeto del usuario
-    usuarios[nombre].ultimoMensaje = mensaje;
-
-    //El texto "ultimoMensaje" es el hash
-}
-
-// Crear una función para obtener el último mensaje de un usuario
-function obtenerUltimoMensaje(usuarios, nombre) {
-    // Si el usuario existe en la tabla hash, devolver su último mensaje
-    if (usuarios[nombre] && usuarios[nombre].ultimoMensaje) {
-        return usuarios[nombre].ultimoMensaje;
+    // Recorrer cada palabra y buscar si se puede formar concatenando otras palabras
+    for (let palabra of palabras) {
+        let actual = palabra;
+        let siguiente = "";
+        
+        // Mientras se pueda formar la palabra actual concatenando otras palabras
+        while (actual.length > 0) {
+            if (tabla[actual]) {
+                siguiente = actual;
+                actual = "";
+            } else {
+                actual = actual.slice(0, -1);
+            }
+        }
+        
+        // Si se encontró una palabra más larga, actualizarla
+        if (siguiente.length > (palabraMasLarga || "").length) {
+            palabraMasLarga = siguiente;
+        }
     }
-    // Si el usuario no existe o no tiene mensajes, devolver un mensaje predeterminado
-    return "El usuario no tiene mensajes recientes.";
+    
+    return palabraMasLarga || null;
 }
 
-// Crear una tabla hash para almacenar usuarios y sus últimos mensajes
-let usuarios = {};
+// Ejemplo de uso
+let palabras = ["cat", "cats", "catsdogcats", "dog", "dogcatsdog", "rat", "ratcatdograt", "ratcatdog"];
 
-// Registrar algunos mensajes
-registrarMensaje(usuarios, "Alice", "Hola, ¿cómo estás?");
-registrarMensaje(usuarios, "Bob", "Estoy bien, ¿y tú?");
-registrarMensaje(usuarios, "Charlie", "¡Hola a todos!");
+let palabraMasLarga = encontrarPalabraMasLarga(palabras);
 
-// Obtener y mostrar el último mensaje de algunos usuarios
-console.log(obtenerUltimoMensaje(usuarios, "Alice"));  // Hola, ¿cómo estás?
-console.log(obtenerUltimoMensaje(usuarios, "Bob"));    // Estoy bien, ¿y tú?
-console.log(obtenerUltimoMensaje(usuarios, "David"));  // El usuario no tiene mensajes recientes.
+console.log(palabraMasLarga); // Output: "ratcatdograt"
+
+//El problema que se está resolviendo es encontrar la palabra más larga que se pueda formar concatenando otras palabras de un array.
