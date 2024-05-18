@@ -11,14 +11,14 @@
 //     console.log("Hello world");
 // }
 
-// function logFunction(n, count = 0) {    
-//     if (n === 1) {
-//         return count;
-//     }
-//     n = Math.floor(n / 2);
-//     return logFunction(n, count + 1);
-// }
-// console.log(logFunction(8));
+function logFunction(n, count = 0) {    
+    if (n === 1) {
+        return count;
+    }
+    n = Math.floor(n / 2);
+    return logFunction(n, count + 1);
+}
+console.log(logFunction(8));
 
 // function determinarSaludo(hora) {
 
