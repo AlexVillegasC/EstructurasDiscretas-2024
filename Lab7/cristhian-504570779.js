@@ -1,4 +1,4 @@
-// Crear un nuevo Map vacío para almacenar los productos y sus cantidades
+// Crear un nuevo Map vacío para almacenar los productos y sus cantidades.
 let inventario = new Map();
 
 // Agregar productos al inventario
