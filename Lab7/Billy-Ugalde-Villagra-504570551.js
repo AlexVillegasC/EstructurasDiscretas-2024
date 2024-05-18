@@ -23,8 +23,7 @@ function romanoAEntero(romano) {
     }
     return total;
 }
-
-// Ejemplo de uso
+//EJemplo
 let numeroRomano = "MMIV";
 let entero = romanoAEntero(numeroRomano);
 console.log(`El valor entero de ${numeroRomano} es ${entero}`);
