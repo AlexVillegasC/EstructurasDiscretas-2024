@@ -1,4 +1,4 @@
-//encontrar un ejemplo que sea hasmap en js, que sea más útil con hasmap
+//encontrar un ejemplo que sea hash tables en js, que sea más útil con hasmap
 
 // Se crea una función para registrar el último mensaje de un usuario
 function registrarMensaje(usuarios, nombre, mensaje) {
