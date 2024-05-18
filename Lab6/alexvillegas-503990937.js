@@ -10,6 +10,8 @@
 // // Ejemplo de uso de la función
 // let numeros = [10, 20, 30, 40, 50];
 // let resultado = busquedaLineal(numeros, 30);
+// console.log(resultado);
+
 
 // if (resultado !== -1) {
 //     console.log(`Elemento encontrado en el índice: ${resultado}`);
@@ -17,36 +19,36 @@
 //     console.log("Elemento no encontrado.");
 // }
 
-////// BINARY SEARCH
+// ////// BINARY SEARCH
+// O(log N)
+function busquedaBinaria(arr, elementoABuscar) {
+    let izquierda = 0;
+    let derecha = arr.length - 1;
 
-// function busquedaBinaria(arr, elementoABuscar) {
-//     let izquierda = 0;
-//     let derecha = arr.length - 1;
+    while (izquierda <= derecha) {
+        let medio = Math.floor((izquierda + derecha) / 2);
 
-//     while (izquierda <= derecha) {
-//         let medio = Math.floor((izquierda + derecha) / 2);
+        if (arr[medio] === elementoABuscar) {
+            return medio; // Devuelve el índice del elemento encontrado
+        } else if (arr[medio] < elementoABuscar) {
+            izquierda = medio + 1; // Descarta la mitad izquierda
+        } else {
+            derecha = medio - 1; // Descarta la mitad derecha
+        }
+    }
 
-//         if (arr[medio] === elementoABuscar) {
-//             return medio; // Devuelve el índice del elemento encontrado
-//         } else if (arr[medio] < elementoABuscar) {
-//             izquierda = medio + 1; // Descarta la mitad izquierda
-//         } else {
-//             derecha = medio - 1; // Descarta la mitad derecha
-//         }
-//     }
+    return -1; // Devuelve -1 si el elemento no se encuentra en el arreglo
+}
 
-//     return -1; // Devuelve -1 si el elemento no se encuentra en el arreglo
-// }
+// Ejemplo de uso de la función
+let numeros = [10, 20, 30, 40,50, 52 , 70, 75, 99]; // Asegúrate de que el arreglo esté ordenado
+let resultado = busquedaNextSucessor(root, 52);
 
-// // Ejemplo de uso de la función
-// let numeros = [10, 20, 30, 40, 50]; // Asegúrate de que el arreglo esté ordenado
-// let resultado = busquedaBinaria(numeros, 30);
-
-// if (resultado !== -1) {
-//     console.log(`Elemento encontrado en el índice: ${resultado}`);
-// } else {
-//     console.log("Elemento no encontrado.");
-// }
+if (resultado !== -1) {
+    console.log(`Elemento encontrado en el índice: ${resultado}`);
+} else {
+    console.log("Elemento no encontrado.");
+}
 
 // Tree Traversals
 
@@ -63,15 +65,19 @@ class TreeNode {
 
 // Helper function to create a simple tree
 function createBinaryTree() {
-    let root = new TreeNode(1);
-    root.left = new TreeNode(2);
-    root.right = new TreeNode(3);
-    root.left.left = new TreeNode(4);
-    root.left.right = new TreeNode(5);
-    root.right.left = new TreeNode(6);
-    root.right.right = new TreeNode(7);
+    let root = new TreeNode("A");
+    root.left = new TreeNode("B");
+    root.right = new TreeNode("C");
+    root.left.left = new TreeNode("D");
+    root.left.right = new TreeNode("E");
+    root.right.left = new TreeNode("F");
+    root.right.right = new TreeNode("G");
     return root;
 }
+//    A
+//  B   C
+//D  E F  G
+//...
 
 // Preorder Traversal (Root, Left, Right) (Retrieves the nodes in ascending order of their keys.)
 function preorderTraversal(node) {
