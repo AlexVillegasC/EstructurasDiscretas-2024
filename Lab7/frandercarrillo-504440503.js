@@ -20,8 +20,9 @@ function eliminarDuplicados(arr) {
 
     return unicos;
 }
-
+// hola
 // Ejemplo
 let arr = [1, 2, 3, 1, 2, 3, 4, 5, 6, 4, 5, 6, 7, 8, 9, 7, 7, 8, 9];
 let arrSinIguales = eliminarIguales(arr);
 console.log(arrSinIguales);
+
