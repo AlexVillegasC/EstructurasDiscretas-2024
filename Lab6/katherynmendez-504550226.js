@@ -1,4 +1,4 @@
-// Definición del nodo del árbol binario
+// Definición del nodo del árbol binario 
 class Nodo {
     constructor(valor) {
         this.valor = valor;
@@ -10,7 +10,7 @@ class Nodo {
 // Función para crear un árbol binario 
 function crearArbolEjemplo() {
     /*
-    ILUSTRACIÓN DEL ÁRBOL
+    ILUSTRACIÓN DEL ÁRBOL BINARIO
              1
             / \
            2   3
