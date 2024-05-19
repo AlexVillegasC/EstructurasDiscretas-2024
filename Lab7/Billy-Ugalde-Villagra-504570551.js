@@ -25,6 +25,6 @@ function romanoAEntero(romano) {
 }
 
 // Ejemplo de uso
-let numeroRomano = "MCMXCIV";
+let numeroRomano ="MMIV";
 let entero = romanoAEntero(numeroRomano);
-console.log(`El valor entero de ${numeroRomano} es ${entero}`);
+console.log(`El valor entero de ${numeroRomano} es: ${entero}`);
