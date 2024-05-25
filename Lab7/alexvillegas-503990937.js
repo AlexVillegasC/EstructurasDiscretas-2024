@@ -1,21 +1,3 @@
-
-
-// Explicar cual es esta estructura de datos y como se comporta.
-let mapa = new Map();
-
-mapa.set("clave", "valor");
-
-console.log(mapa.get("clave")); // imprime: "valor"
-
-// Explicar, como se puede recorrer un Hash Map, paso a paso.
-mapa.set("clave1", "valor1");
-mapa.set("clave2", "valor2");
-
-mapa.forEach((valor, clave) => {
-  console.log(`Clave: ${clave}, Valor: ${valor}`);
-});
-
-
 // Explicar el siguiente ejemplo:
 let arr = [1, 2, 3, 1, 2, 3, 4, 5, 6, 4, 5, 6, 7, 8, 9, 7, 7,8, 9];
 let duplicados = contarDuplicados(arr);
@@ -33,7 +15,7 @@ function contarDuplicados(arr) {
     // Recorrer el array
     for (let i = 0; i < arr.length; i++) {
         // Si el número ya está en el Map, incrementar su contador
-        if (mapa.has(arr[i])) {
+        if (mapa.has(arr[i])) { //Si el mapa tiene
             mapa.set(arr[i], mapa.get(arr[i]) + 1);
         }
         // Si el número no está en el Map, agregarlo con un contador de 1
@@ -55,3 +37,6 @@ function contarDuplicados(arr) {
 
     return duplicados;
 }
+
+//SUbir un ejemplo donde hasmap donde sea mejor usar que otras formas.
+//Numero romano a numeros enteros
