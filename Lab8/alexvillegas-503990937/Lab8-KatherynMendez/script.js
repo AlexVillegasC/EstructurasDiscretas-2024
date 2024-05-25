@@ -6,3 +6,7 @@ function darBienvenida() {
         alert("Por favor, ingrese su nombre.");
     }
 }
+
+function mostrarEnConsola() {
+    console.log("Se hizo clic en el botón.");
+}
