@@ -8,5 +8,6 @@ function darBienvenida() {
 }
 
 function mostrarEnConsola() {
-    console.log("Se hizo clic en el botón.");
+    var textoIngresado = document.getElementById("nombre").value;
+    console.log("Texto ingresado en la caja de texto: " + textoIngresado);
 }
