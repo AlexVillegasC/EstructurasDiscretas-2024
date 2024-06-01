@@ -1,4 +1,4 @@
-function romanToArabic(NumeroRomano)
+function Romano_A_NumeroNormal(NumeroRomano)
 {
     NumeroRomano = NumeroRomano.toUpperCase().replace(/[^IVXLCDM]/g, '');
     let Numero = 0;
@@ -31,3 +31,12 @@ function romanToArabic(NumeroRomano)
     }
     return Numero;
 }
+
+document.getElementById('convertir').addEventListener('click', function() 
+{
+    let NumeroRomano = document.getElementById('numRomano').value;
+
+    let Resultado = Romano_A_NumeroNormal(NumeroRomano); 
+    
+    document.getElementById('resultado').textContent = 'Resultado: '+ Resultado;
+});
