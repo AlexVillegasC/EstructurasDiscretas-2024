@@ -1,0 +1,70 @@
+/* Estilos para el contenedor principal */
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; /* Agregamos un espacio entre este contenedor y el siguiente */
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#mensaje {
+    margin-top: 20px;
+    color: #666;
+}
+
+/* Estilos para el contenedor del perfil */
+.perfil-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-container h1 {
+    color: #333;
+}
+
+.perfil-container img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.perfil-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.perfil-container a:hover {
+    text-decoration: underline;
+}

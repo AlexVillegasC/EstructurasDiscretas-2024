@@ -1,0 +1,32 @@
+/* style.css */
+
+/* Estilos para el título */
+#titulo {
+    font-size: 24px;
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  /* Estilos para el cuadro de texto */
+  #miCuadroTxt {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Borde del cuadro */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  /* Estilos para el botón */
+  #miBoton {
+    background-color: #0074D9; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espacio interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  /* Estilos para el botón al pasar el cursor por encima */
+  #miBoton:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro */
+  }
+  
