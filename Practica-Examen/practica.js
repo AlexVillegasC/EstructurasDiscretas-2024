@@ -11,14 +11,14 @@
 //     console.log("Hello world");
 // }
 
-// function logFunction(n, count = 0) {    
-//     if (n === 1) {
-//         return count;
-//     }
-//     n = Math.floor(n / 2);
-//     return logFunction(n, count + 1);
-// }
-// console.log(logFunction(8));
+function logFunction(n, count = 0) {    
+    if (n === 1) {
+        return count;
+    }
+    n = Math.floor(n / 2);
+    return logFunction(n, count + 1);
+}
+console.log(logFunction(8));
 
 // function determinarSaludo(hora) {
 
@@ -61,11 +61,11 @@
 //     for (let i = 0; i < length; i++) {
 //         for (let j = 0; j < length - i - 1; j++) {
 //             if (array[j] < array[j + 1]) {
-//                 const temp = array[j];
-//                 array[j] = array[j + 1];
-//                 array[j + 1] = temp;
-//             }
-//         }
+//                const temp = array[j];
+//                array[j] = array[j + 1];
+//                array[j + 1] = temp;
+//            }
+//        }
 //     }
-//     return array;
-// }
+//    return array;
+//
