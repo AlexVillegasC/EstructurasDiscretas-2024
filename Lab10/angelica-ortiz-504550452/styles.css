@@ -1,0 +1,29 @@
+
+/* Estilo para el título h1 */
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo para el párrafo */
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilo para el botón */
+button {
+    background-color: #11314c;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilo para el resultado */
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a8421;
+}
