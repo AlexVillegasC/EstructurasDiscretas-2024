@@ -17,42 +17,39 @@ class BinarySearchTree {
         this.root.left.left.left = new TreeNode(1);
     }
 
-    inorderTraversal(root, array) {
-        if (root !== null) {
-            this.inorderTraversal(root.left, array);
-            array.push(root.val);
-            this.inorderTraversal(root.right, array);
-        }
-    }
-
-    inorderSuccessor(array, val) {
-        for (let i = 0; i < array.length - 1; i++) {
-            if (array[i] === val) {
-                return array[i + 1];
+    inorderSuccessor(root, val) {
+        let successor = null;
+        while (root) {
+            if (val < root.val) {
+                successor = root;
+                root = root.left;
+            } else if (val > root.val) {
+                root = root.right;
+            } else {
+                if (root.right) {
+                    root = root.right;
+                    while (root.left) {
+                        root = root.left;
+                    }
+                    successor = root.val;
+                }
+                break;
             }
         }
-        return null; // Si no se encuentra un sucesor
+        return successor;
     }
 }
 
 // Crear el árbol
 let bst = new BinarySearchTree();
 
-// Realizar un recorrido inorden y almacenar los resultados en un arreglo
-let sortedElements = [];
-bst.inorderTraversal(bst.root, sortedElements);
-
 // Valor para el cual buscamos el sucesor inorden
 let valueToFindSuccessor = 5;
 
-// Encontrar y mostrar el sucesor inorden usando el arreglo
-let successor = bst.inorderSuccessor(sortedElements, valueToFindSuccessor);
+// Encontrar y mostrar el sucesor inorden usando el nuevo algoritmo
+let successor = bst.inorderSuccessor(bst.root, valueToFindSuccessor);
 if (successor !== null) {
     console.log("El sucesor inorden de " + valueToFindSuccessor + " es: " + successor);
 } else {
     console.log("No hay sucesor inorden para " + valueToFindSuccessor);
 }
-
-
-// El algoritmo anterior tiene una complejidad de Tiempo O(n) y de espacio O(n).
-// El desafío es, conseguir un algorimo más óptimo, que tenga complejidad de tiempo O(n) y de espacio O(1)!
