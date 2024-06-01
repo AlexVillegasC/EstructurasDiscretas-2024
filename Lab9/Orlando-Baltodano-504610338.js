@@ -24,6 +24,7 @@ class BinarySearchTree {
     {
         let successor = null;
         let current = this.root;
+        
         while (current !== null)
         {
            if(n < current.val)
