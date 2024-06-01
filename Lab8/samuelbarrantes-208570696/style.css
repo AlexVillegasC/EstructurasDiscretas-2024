@@ -1,0 +1,40 @@
+head{
+    background-color: aqua;
+    text-align: center;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+body{
+    background-color:darkslategray;
+    text-align: center;
+}
+label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: grey;
+   
+}
+input{
+    background-color:gray;
+}
+#MiCuaddroNombre:hover{
+    background-color: dimgray;
+    transition: all 1s;
+}
+#CuadroNumero:hover{
+    background-color: dimgray;
+    transition: all 1s;
+}
+
+ button {
+    background-color: grey;
+    transition: all 1s;
+}
+button:hover{
+    background-color: darkgreen;
+    transition: all 1s; /*Asigno que el cambio de color en el boton se de un segundo cuando este el puntero sobre el*/
+}
+#resultado{
+    background-color: bisque;
+}

@@ -1,0 +1,26 @@
+/* Cuerpo */
+body {
+    font-family: sans-serif; /* Fuente sans-serif */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    background-image: url('https://plus.unsplash.com/premium_photo-1681399977843-3efee572acd4?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* URL de la imagen */
+    background-size: 100vw 100vh; /* Cubrir el viewport con unidades de viewport */
+    background-position: center; /* Posicionar al centro */
+  }
+  
+  /* Títulos h1 */
+  h1 {
+    color:orangered; /* Gris oscuro */
+    font-size: 24px; /* Tamaño 24px */
+    text-align: center; /* Alineado al centro */
+    margin-bottom: 20px; /* Margen inferior */
+  }
+  
+  /* Entrada de texto */
+  input[type="text"] {
+    padding: 8px; /* Relleno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    width: 250px; /* Ancho */
+    margin-bottom: 10px; /* Margen inferior */
+  }
+  
+  
