@@ -54,4 +54,4 @@ function contarDuplicados(arr) {
     }
 
     return duplicados;
-}
+}       
