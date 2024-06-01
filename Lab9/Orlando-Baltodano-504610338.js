@@ -16,7 +16,7 @@ class BinarySearchTree {
         this.root.left.left = new TreeNode(2);
         this.root.left.right = new TreeNode(4);
         this.root.left.left.left = new TreeNode(1);
-    }
+    }//
 
 
 
