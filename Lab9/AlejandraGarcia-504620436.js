@@ -19,51 +19,26 @@ class BinarySearchTree {
 
     inorderSuccessor(root, val) {
         let successor = null;
+        let current = root;
 
-        const findSuccessor = (node) => {
-            if (!node) {
-                return;
-            }
-
-            if (node.val > val) {
-                successor = node;
-                findSuccessor(node.left);
+        while (current !== null) {
+            if (current.val > val) {
+                successor = current;
+                current = current.left;
             } else {
-                findSuccessor(node.right);
+                current = current.right;
             }
-        };
+        }
 
-        findSuccessor(this.root);
         return successor ? successor.val : null;
-    }
-
-    getAllValuesInOrder() {
-        const values = [];
-        const traverse = (node) => {
-            if (node) {
-                traverse(node.left);
-                values.push(node.val);
-                traverse(node.right);
-            }
-        };
-        traverse(this.root);
-        return values;
-    }
-
-    getRandomInt(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 }
 
 // Crear el árbol
 let bst = new BinarySearchTree();
 
-// Obtener todos los valores del árbol en orden
-const allValues = bst.getAllValuesInOrder();
-
-// Seleccionar un valor aleatorio de allValues
-const randomIndex = bst.getRandomInt(0, allValues.length - 1);
-const valueToFindSuccessor = allValues[randomIndex];
+// Valor para el cual buscamos el sucesor inorden
+let valueToFindSuccessor = 5;
 
 // Encontrar y mostrar el sucesor inorden
 let successor = bst.inorderSuccessor(bst.root, valueToFindSuccessor);
