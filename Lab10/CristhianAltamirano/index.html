@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convertidor de numeros romanos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="Titulo">Convertidor de numeros romanos</h1>
+        </header>
+        <section id="converter">
+            <div class="input-container">
+                <label for="number-input">Ingresa un numero:</label>
+                <input type="text" id="number-input" placeholder="">
+            </div>
+            <div class="radio-container">
+                <label>
+                    <input type="radio" name="conversion-type" value="natural-to-roman" checked>
+                    Natural a romano
+                </label>
+                <label>
+                    <input type="radio" name="conversion-type" value="roman-to-natural">
+                    Romano a natural
+                </label>
+            </div>
+            <button id="convert-btn">Convertir</button>
+            <div class="output-container">
+                <label for="result-output">Resultado:</label>
+                <input type="text" id="result-output" readonly>
+                <span id="example-output"></span>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 crissXcoder</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
