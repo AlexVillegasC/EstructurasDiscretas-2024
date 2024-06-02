@@ -1,7 +1,7 @@
 function convertir() {
     var romanNumber = document.getElementById('romanNumber').value;
     var number = numberToRoman(romanNumber);
-    document.getElementById('result').innerText = "El número romano equivalente es: " + number;
+    document.getElementById('result').innerText = "El número natural equivalente es: " + number;
 }
 
 function numberToRoman(romano) {
