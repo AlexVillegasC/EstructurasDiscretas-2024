@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+header img{
+    margin-top: 1.2%;
+    margin-left: 1%;
+    margin-bottom: 1.2%;
+    width: 105px;
+    height: 70px;
+}
+
+header {
+    width:100%;
+    height: 109px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #F5F5F5;
+    box-shadow: 0px 0px 10px 0px #0000008d;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    margin-right: 3.5%;
+}
+
+.links-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 200px;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a:hover {
+    color: #d260a6;
+}
+  
+nav ul li a {
+    color: #000000;
+    padding: 0 7px 0 7px;
+    text-decoration: none;
+    position: relative;
+}
+  
+ul li a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #d260a6;
+    bottom: -10px;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0, 0);
+}
+  
+ul li a:hover::before {
+    transform: scale(1, 1);
+}
+
+
+body{
+    background-color: #aad0de;
+    margin-left: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    padding-top: 12rem;
+    z-index: 1001;
+}
+
+.container-input{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-left: 20%;
+    
+}
+
+.container-input h1{
+    display: flex;
+    justify-content: center;
+}
+
+.input-escribir{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; 
+    font-size: xx-large; 
+    padding-left: 16rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem; 
+    padding-right: 16rem;
+    border: solid #FFC0D3;
+    border-radius: 30px;
+    background: #FFC0D3;
+    box-shadow: 0px 0px 10px 0px #00000091;
+}
+
+::placeholder{
+    color: #000000;
+}
+
+footer{
+    background-color: #F5F5F5;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0px 0px 10px 0px #0000006b;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
