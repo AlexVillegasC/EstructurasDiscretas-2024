@@ -19,7 +19,6 @@ if (precioProducto < 2.00) {
   console.log("El precio final del producto " + nombreProducto + " es de $" + precioFinal);
 }
 
-
 // Ejemplo de uso de variables `const`
 const PI = 3.1415926535; // Variable constante de tipo `number`
 const IVA = 0.18; // Variable constante de tipo `number`
