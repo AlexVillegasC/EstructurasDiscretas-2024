@@ -14,5 +14,5 @@ console.log("Lista de libros favoritos:");
 librosFavoritos.forEach((autor, libro) => { // Itera sobre cada par clave-valor en el HashMap
 
   console.log(`${libro} - ${autor}`); // Imprime el nombre del libro y su autor
-
+ 
 });
