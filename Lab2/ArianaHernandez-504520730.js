@@ -2,6 +2,7 @@
 var nombreUsuario = "Ariana Hernandez"; // Variable global de tipo `string`
 var edadUsuario = 20; // Variable global de tipo `number`
 
+
 saludarUsuario(); // Función que utiliza las variables globales
 
 function saludarUsuario() {
