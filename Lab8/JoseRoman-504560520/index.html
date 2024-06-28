@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi primera pagina WEB</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="titulo">MI PRIMERA PAGINA WEB</h1>
+        <label id="nombre">Ingrese su nombre: </label>
+        <input id="miNombreTxt" type="text" required>
+
+        <label id="correo">Ingrese su correo electronico: </label>
+        <input id="miCorreoTxt" type="email" required>
+        <button id="buttonRegistro">LOGIN</button>
+
+        <p id="show1"></p>
+        <p id="show2"></p>
+
+        <!-- <button id="alert" onclick="mostrarAlerta()">Mostrar Alerta</button>  --> 
+
+        <div id="alertaPersonalizada" class="oculta">
+            <div class="alertaContenido">
+                <span class="cerrar" onclick="cerrarAlerta()">&times;</span>
+                <p>Rellena todos los campos!!</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
