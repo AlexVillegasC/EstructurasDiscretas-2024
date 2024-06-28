@@ -23,8 +23,4 @@ let duplicadosFrutas = contarDuplicados(frutas);
 // Imprimir los elementos duplicados y su cantidad
 duplicadosFrutas.forEach((cantidad, fruta) => {
     console.log(`Fruta: ${fruta}, Cantidad: ${cantidad}`);
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> aafdf53928bfe132e3981b38467ec2dd78c8c6d7
