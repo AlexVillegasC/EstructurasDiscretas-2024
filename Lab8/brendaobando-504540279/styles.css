@@ -1,0 +1,56 @@
+/* Estilo básico para la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffcde2;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo para el encabezado */
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo para la etiqueta y el campo de entrada */
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el botón */
+button {
+    background-color: #fa64c8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #f0018c;
+}

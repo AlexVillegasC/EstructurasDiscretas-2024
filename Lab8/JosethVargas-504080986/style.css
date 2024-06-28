@@ -1,0 +1,47 @@
+/* style.css */
+
+/* Estilo para el título */
+#titulo {
+    font-size: 24px;
+    color: #008000; /* Cambia el color del texto a verde (#008000) */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la etiqueta de entrada de texto */
+#miCuadroTxt {
+    width: 35%; /* El cuadro de texto ocupa la mitad del ancho de la pantalla */
+    margin: 0 auto; /* Centra horizontalmente el cuadro de texto */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#miCuadroTxt2{
+    width: 35%; /* El cuadro de texto ocupa la mitad del ancho de la pantalla */
+    margin: 0 auto; /* Centra horizontalmente el cuadro de texto */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Cambia el color de fondo según tus preferencias */
+    margin: 0;
+    padding: 0;
+}
+
+label{
+
+    font-size: 16px;
+    color: #090080;
+    margin-bottom: 10px;
+    font-style:oblique;;
+}

@@ -1,0 +1,91 @@
+/* style.css */
+
+/* Importar Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+/* Estilos generales */
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilo para el título */
+#titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: #6a11cb;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilo para el label */
+label {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Estilo para el input */
+input {
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: calc(100% - 28px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+/* Estilo para el botón */
+button {
+    padding: 12px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #6a11cb;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #2575fc;
+    transform: translateY(-5px);
+}
+
+/* Estilos adicionales para la página de bienvenida */
+#mensaje {
+    font-size: 1.5em;
+    color: #6a11cb;
+}
