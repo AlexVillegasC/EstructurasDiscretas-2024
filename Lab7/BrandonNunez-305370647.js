@@ -22,7 +22,7 @@ function encontrarContactosRepetidos(agenda) {
             mapaNumeros.set(numero, 1);
         }
     }
-
+    
     // Crear un nuevo Map para guardar sólo los números de teléfono duplicados
     let numerosRepetidos = new Map();
 

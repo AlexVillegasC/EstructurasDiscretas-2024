@@ -6,7 +6,8 @@ const titulo = document.getElementById('titulo');
 
 
 // Agrega un evento de escucha para la tecla "Enter"
-miCuadroTxt.addEventListener('keydown', (event) => {
+miCuadroTxt.addEventListener('keydown', (event) => 
+    {
     if (event.key === 'Enter') 
     {
          const nuevotitulo = miCuadroTxt.value;

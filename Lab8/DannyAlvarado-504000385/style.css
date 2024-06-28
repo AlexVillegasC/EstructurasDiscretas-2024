@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #C38D9E;
+    --secondary-color: #E27D60;
+    --secondary-color-hover: #C38D9E;
+    --text-color: #4A4A4A;
+    --background-color: #F7CAC9;
+    --border-color: #C38D9E;
+    --border-radius: 5px;
+    --padding: 20px;
+    --margin: 10px;
+    --font-size-content: 18px;
+    --font-size-contact: 20px;
+    --font-family-description: 'Georgia, serif';
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 0;
+}
+
+header img.portada {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    padding: var(--padding);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+#inicio {
+    padding: var(--padding);
+    font-size: var(--font-size-content);
+    font-family: var(--font-family-description);
+}
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#productos h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    margin: var(--margin);
+    padding: var(--padding);
+    text-align: center;
+    width: 200px;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin-top: 10px;
+}
+
+#contacto {
+    font-size: var(--font-size-contact);
+}
+
+button {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--text-color);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-color-hover);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px;
+}

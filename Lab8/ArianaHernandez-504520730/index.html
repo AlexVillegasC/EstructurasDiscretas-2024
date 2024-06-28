@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera página web</title> <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titulo">Mi primera página web</h1>
+    <label for="miCuadroTxt">Ingrese aquí una cantidad</label> <input id="miCuadroTxt" type="text">
+    <script>
+        // Obtener referencias al input y al título
+        const inputCuadroTexto = document.getElementById('miCuadroTxt');
+        const tituloPagina = document.getElementById('titulo');
+
+        // Función para actualizar el título
+        function actualizarTitulo() {
+            const nuevoTitulo = inputCuadroTexto.value; // Obtener el valor del input
+            tituloPagina.textContent = nuevoTitulo; // Cambiar el contenido del título
+        }
+
+        // Agregar evento 'input' al input para ejecutar la función al escribir
+        inputCuadroTexto.addEventListener('input', actualizarTitulo);
+    </script>
+</body>
+</html>
